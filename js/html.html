@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .img{
+            float: left;
+            margin-top: 15px;
+            padding-left: 300px;
+          
+            
+        }
+        .img img{
+            object-fit: cover;
+            height: 200px;
+            width: 300px;
+
+        }
+        .box{
+            height: 500px;
+            width: 60%;
+            margin-top: 10px;
+            margin-left: 300px ;
+        }
+        .box img{
+            object-fit: cointain;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box"><img src="https://th.bing.com/th/id/OIP.DP48uGkldTg01Wx5KTExXAHaE6?w=289&h=191&c=7&r=0&o=5&dpr=1.25&pid=1.7" id="img1" onclick="handleClick(1)"></div>
+    <div class="img"><label><img src="https://th.bing.com/th/id/OIP.DP48uGkldTg01Wx5KTExXAHaE6?w=289&h=191&c=7&r=0&o=5&dpr=1.25&pid=1.7" id="img1" onclick="handleClick(1)"></label>
+    <label><img src="https://th.bing.com/th/id/OIP.5DbQ8lV38MGMzfB3h43XKwHaFA?w=251&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" id="img2" onclick="handleClick(2)"></label>
+    <label><img src="https://th.bing.com/th/id/OIP.fL5sYuRAWjnZATXNgOJG8AHaFj?w=255&h=191&c=7&r=0&o=5&dpr=1.25&pid=1.7" id="img3" onclick="handleClick(3)"></label>
+    </div>
+
+    <script>
+        function handleClick(val) {
+        switch (val) {
+          case 1:
+            document.getElementById("box").innerHTML="<img src='https://th.bing.com/th/id/OIP.DP48uGkldTg01Wx5KTExXAHaE6?w=289&h=191&c=7&r=0&o=5&dpr=1.25&pid=1.7' />";
+            break;
+
+          case 2:
+          document.getElementById("box").innerHTML="<img src='https://th.bing.com/th/id/OIP.5DbQ8lV38MGMzfB3h43XKwHaFA?w=251&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7' />"
+            break;
+
+          case 3:
+          document.getElementById("box").innerHTML="<img src='https://th.bing.com/th/id/OIP.fL5sYuRAWjnZATXNgOJG8AHaFj?w=255&h=191&c=7&r=0&o=5&dpr=1.25&pid=1.7'/>"
+            break;
+        }
+      }
+    </script>
+
+
+</body>
+</html>
